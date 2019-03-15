@@ -30,12 +30,6 @@
       <li class="nav-item active">
         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contacts">Contacts</a>
-      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Products
@@ -46,6 +40,12 @@
           <a class="dropdown-item" href="#">Coming Soon</a>
         </div>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacts">Contacts</a>
+      </li>
     </ul>
     <!-- Links -->
 
@@ -55,9 +55,33 @@
 </nav>
 <!--/.Navbar-->
   <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ttVZtSAofBk" frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="container-fluid">
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ttVZtSAofBk" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6">
+      <button id="formToggle"type="button" name="button">
+      <form class="userInput" action="index.html" method="post">
+        <label for="name">Name</label><br>
+        <input id="newName" type="text" name="name" value=""><br>
+        <label for="email">Email</label><br>
+        <input id="newEmail"type="text" name="email" value=""><br>
+        <label for="password">Password</label><br>
+        <input id="newPass"type="text" name="password" value=""><br>
+        <label for="submit"></label><br>
+        <input id="userInfo"type="submit" name="" value="submit"><br>
+      </form>
+      <label id="signup" for="">SIGN UP</label>
+      </button>
+      </div>
+    </div>
+    </div>
+
+      <div class="container-fluid">
       <h1 id ="products">PRODUCTS</h1>
       <h2 id="bCardHolders">Business Card Holders</h2>
       <div class="row">
@@ -78,7 +102,7 @@
             </div>
             <div class="card-body">
               <div class="collapse-content">
-                <p class="card-text collapse" id="collapseContent">Keeps your cards clean and undamaged.</p>
+                <p class="card-text collapse" id="collapseContent">Keeps your cards clean.</p>
                 <p class="card-text collapse" id="collapseContent">Slim,sturdy,comfortable.</p>
                 <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
                 <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
@@ -89,13 +113,81 @@
           </div>
         </div>
         <div class="col-md-3">
-          <img id="product1" src="images/two.jpg" alt="">
+          <div class="card promoting-card">
+            <div class="card-body d-flex flex-row">
+
+              <div class="">
+                <h4 class="card-title font-weight-bold mb-2">Brown with Gold</h4>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img id="product1" class="card-img-top-rounded-0" src="images/two.jpg" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="collapse-content">
+                <p class="card-text collapse" id="collapseContent">Magnetic lid to keep your cards intact.</p>
+                <p class="card-text collapse" id="collapseContent">Keeps your cards' edges neat.</p>
+                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
+                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card promoting-card">
+            <div class="card-body d-flex flex-row">
+
+              <div class="">
+                <h4 class="card-title font-weight-bold mb-2">Wooden Black</h4>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img id="product1" class="card-img-top-rounded-0" src="images/three.jpg" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="collapse-content">
+                <p class="card-text collapse" id="collapseContent">Wooden feel,sturdy.</p>
+                <p class="card-text collapse" id="collapseContent">Gentle to your pockets.</p>
+                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
+                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-3">
-          <img id="product1" src="images/three.jpg" alt="">
-        </div>
-        <div class="col-md-3">
-          <img id="product1" src="images/four.jpg" alt="">
+          <div class="card promoting-card">
+            <div class="card-body d-flex flex-row">
+
+              <div class="">
+                <h4 class="card-title font-weight-bold mb-2">Yellow Magenta</h4>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img id="product1" class="card-img-top-rounded-0" src="images/four.jpg" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="collapse-content">
+                <p class="card-text collapse" id="collapseContent">Leave a good impression.</p>
+                <p class="card-text collapse" id="collapseContent">Keeps you organized.</p>
+                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
+                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <h2 id="wallets">Wallets</h2>

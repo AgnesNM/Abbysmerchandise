@@ -12,3 +12,12 @@ padding:2%;
 .collapse-content .fa.fa-share-alt:hover {
   color: #0d47a1 !important;
 }
+.col-md-3{
+  padding-bottom: 2%;
+}
+.input{
+  width:100%;
+}
+.userInput{
+  display:none;
+}
