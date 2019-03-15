@@ -1,8 +1,9 @@
 //Business Logic
-function user (name, email, password {
-  this.name = name;
-  this.
-})
+// function User (name, email, password) {
+//   this.name = name;
+//   this.email = email;
+//   this.password = password;
+// })
 //UI Logic
 $(document).ready(function(){
   $("#formToggle").click(function(){
@@ -13,7 +14,9 @@ $(document).ready(function(){
     var userName = $("newName").val();
     var userEmail = $("newEmail").val();
     var userPass = $("newPass").val();
-    var newUser =
+    // var newUser = new User (name,email,password);
+    // var userData = [];
+    // userData.push(userName, userEmail,userPass);
   });
   eventPreventDefault();
 });
