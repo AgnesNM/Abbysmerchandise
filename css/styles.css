@@ -18,6 +18,13 @@ padding:2%;
 .input{
   width:100%;
 }
-#userInput{
+#signUpForm{
+  display:none;
+}
+button{
+  margin:1%;
+  float:right;
+}
+#loginForm{
   display:none;
 }

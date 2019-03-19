@@ -63,19 +63,37 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ttVZtSAofBk" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-md-6">
-      <button id="formToggle"type="button" name="button">
-      <form id="userInput" action="index.html" method="post">
+      <div class="col-md-2">
+      <button id="userSignUp"type="button" name="button">
+      <form id="signUpForm" action="index.html" method="post">
         <label for="name">Name</label><br>
         <input id="newName" type="text" name="fName" value=""required><br>
         <label for="email">Email</label><br>
         <input id="newEmail"type="text" name="email" value=""required><br>
         <label for="password">Password</label><br>
         <input id="newPass"type="text" name="password" value=""required><br>
-        <label for="submit"></label><br>
+
         <input id="userInfo"type="submit" name="submit" value="Submit"><br>
       </form>
       <label id="signup" for="">SIGN UP</label>
+      </button>
+      </div>
+      <div class="col-md-2">
+        <p id="display"></p>
+      </div>
+
+      <div class="col-md-2">
+      <button id="userLogIn"type="button" name="button">
+      <form id="loginForm" action="index.html" method="post">
+        <label for="name">Name</label><br>
+        <input id="userName" type="text" name="fName" value=""required><br>
+        <label for="email">Email</label><br>
+        <input id="userEmail"type="text" name="email" value=""required><br>
+        <label for="password">Password</label><br>
+        <input id="userPass"type="text" name="password" value=""required><br>
+        <input id="userData"type="submit" name="submit" value="Submit"><br>
+      </form>
+      <label id="login" for="">LOG IN</label>
       </button>
       </div>
     </div>
