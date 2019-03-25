@@ -29,6 +29,6 @@ $(document).ready(function() {
 		var currentPass = $("#userPass").val();
 		var loginArray = [];
 		loginArray.push(currentName,currentEmail,currentPass);
-		//Could not get to compare the elements using arrays and array elements, looping, forEach didn't work, so decided to try objeects.	
+		//Could not get to compare the elements using arrays and array elements, looping, forEach didn't work, so decided to try objeects.
 	});
 });
