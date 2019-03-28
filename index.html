@@ -1,235 +1,198 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Abbysmerchandise</title>
-  </head>
-  <!--Navbar-->
-<nav class="navbar sticky-top navbar warning-color">
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8"><!-- Font Awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet"><!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"><!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<title>Abbysmerchandise</title>
+</head><!--Navbar-->
+<body>
+	<nav class="navbar sticky-top navbar warning-color">
+		<!-- Navbar brand -->
+		<a class="navbar-brand" href="#home"><img alt="logo" class="d-inline-block align-top" height="70" src="images/Logo.png"></a> <!-- Collapse button -->
+		 <button aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler toggler-example" data-target="#navbarSupportedContent1" data-toggle="collapse" type="button"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button> <!-- Collapsible content -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+			<!-- Links -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink-333">Products</a>
+					<div aria-labelledby="navbarDropdownMenuLink-333" class="dropdown-menu dropdown-default">
+						<a class="dropdown-item" href="#bCardHolders">Business Card Holders</a> <a class="dropdown-item" href="#wallets">Wallets</a> <a class="dropdown-item" href="#decoration">Decoration Types</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contacts">Contacts</a>
+				</li>
+			</ul><!-- Links -->
+		</div><!-- Collapsible content -->
+	</nav><!--/.Navbar-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/ttVZtSAofBk" width="560"></iframe>
+			</div>
+			<div class="col-md-3">
+				<button id="userSignUp" name="button" type="button">
+				<form action="index.html" id="signUpForm" method="post" name="signUpForm">
+					<label for="name">Name</label><br>
+					<input id="newName" name="fName" required="" type="text" value=""><br>
+					<label for="email">Email</label><br>
+					<input id="newEmail" name="email" required="" type="text" value=""><br>
+					<label for="password">Password</label><br>
+					<input id="newPass" name="password" required="" type="text" value=""><br>
+					<input id="userInfo" name="submit" type="submit" value="Submit"><br>
+				</form><label for="" id="signup">SIGN UP</label></button>
+			</div>
+			<div class="col-md-3">
+				<button id="userLogIn" name="button" type="button">
+				<form action="index.html" id="loginForm" method="post" name="loginForm">
+					<label for="name">Name</label><br>
+					<input id="userName" name="fName" required="" type="text" value=""><br>
+					<label for="email">Email</label><br>
+					<input id="userEmail" name="email" required="" type="text" value=""><br>
+					<label for="password">Password</label><br>
+					<input id="userPass" name="password" required="" type="text" value=""><br>
+					<input id="userData" name="submit" onclick="getInfo()" type="submit" value="Submit"><br>
+				</form><label for="" id="login">LOG IN</label></button>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<h1 id="products">PRODUCTS</h1>
+		<h2 id="bCardHolders">Business Card Holders</h2>
+		<div class="row">
+			<!-- Card deck -->
+			<div class="card-deck">
+				<!-- Card -->
+				<div class="card mb-3">
+					<!--Card image-->
+					<div class="view overlay">
+						<img id="product1" alt="professional business card holders" class="card-img-top-rounded-0" src="images/one.jpg"> <a href="#!">
+            <div class="mask rgba-white-slight"></div></a>
+					</div><!--Card content-->
+					<div class="card-body">
+						<!--Title-->
+						<h4 class="card-title font-weight-bold mb-2">Black with Silver</h4>
+						<p class="card-text" id="collapseContent">Keeps your cards clean.</p>
+						<p class="card-text" id="collapseContent">Slim,sturdy,comfortable.</p>
+						<h6>Choose decoration type:</h6>
+	          <select class="" name="">
+	            <option selected="selected" value="">Select</option>
+	            <option value="Beads">Beads<img src="images/Beads.jpg" alt="Bead Decoration"</option>
+	            <option value="Brass">Brass</option>
+	            <option value="Engraving">Engraving</option>
+	            <option value="Flatbed">Flatbed UV Coating</option>
+	          </select>
+					</div>
+				</div><!-- Card -->
+				<div class="card mb-3">
+					<!--Card image-->
+					<div class="view overlay">
+						<img id="product1" class="card-img-top-rounded-0" src="images/two.jpg" alt="Affordable business card holders"> <a href="#!">
+						<div class="mask rgba-white-slight"></div></a>
+					</div><!--Card content-->
+					<div class="card-body">
+						<!--Title-->
+						<h4 class="card-title font-weight-bold mb-2">Brown with Gold</h4>
+						<p class="card-text" id="collapseContent">Magnetic lid to keep your cards intact.</p>
+						<p class="card-text" id="collapseContent">Keeps your cards' edges neat.</p>
+						<h6>Choose decoration type:</h6>
+	          <select class="" name="">
+	            <option value="" selected>Select</option>
+	            <option value="Beads">Beads <img src="images/Beads.jpg" alt="Bead Decoration"> </option>
+	            <option value="Brass">Brass</option>
+	            <option value="Engraving">Engraving</option>
+	            <option value="Flatbed">Flatbed UV Coating</option>
+	          </select>
+					</div>
+				</div><!-- Card -->
+				<div class="card mb-3">
+					<!--Card image-->
+					<div class="view overlay">
+						<img id="product1" class="card-img-top-rounded-0" src="images/three.jpg" alt="Synthetic leeather business card holder"> <a href="#!">
+						<div class="mask rgba-white-slight"></div></a>
+					</div><!--Card content-->
+					<div class="card-body">
+						<!--Title-->
+						<h4 class="card-title font-weight-bold mb-2">Wooden Black</h4>
+						<p class="card-text" id="collapseContent">Wooden feel,sturdy.</p>
+						<p class="card-text" id="collapseContent">Gentle to your pockets.</p>
+						<h6>Choose decoration type:</h6>
+						<select class="" name="">
+	            <option value=""selected>Select</option>
+	            <option value="Beads">Beads <img src="images/Beads.jpg" alt="Bead Decoration"> </option>
+	            <option value="Brass">Brass</option>
+	            <option value="Engraving">Engraving</option>
+	            <option value="Flatbed">Flatbed UV Coating</option>
+	          </select>
+					</div>
+				</div><!-- Card -->
+				<!-- Card -->
+				<div class="card mb-3">
+					<!--Card image-->
+					<div class="view overlay">
+						<img id="product1" class="card-img-top-rounded-0" src="images/four.jpg" alt="Gifts in Nairobi,Kenya"> <a href="#!">
+						<div class="mask rgba-white-slight"></div></a>
+					</div><!--Card content-->
+					<div class="card-body">
+						<!--Title-->
+						<h4 class="card-title font-weight-bold mb-2">Yellow Magenta</h4>
+						<p class="card-text" id="collapseContent">Leave a good impression.</p>
+						<p class="card-text" id="collapseContent">Keeps you organized.</p>
+						<h6>Choose decoration type:</h6>
+						<select class="" name="">
+	            <option value="" selected>Select</option>
+	            <option value="Beads">Beads <img src="images/Beads.jpg" alt="Bead Decoration"> </option>
+	            <option value="Brass">Brass</option>
+	            <option value="Engraving">Engraving</option>
+	            <option value="Flatbed">Flatbed UV Coating</option>
+	          </select>
+					</div>
+				</div><!-- Card -->
+			</div><!-- Card deck -->
+		</div>
+		<h2 id="wallets">Wallets</h2>
+		<div class="row">
+			<div class="col-md-3"><img alt="Genuine Leather Wallets" id="product1" src="images/five.jpg"></div>
+			<div class="col-md-3">
+			<h2></h2><img alt="Men's wallets in Nairobi" id="product1" src="images/six.jpg"></div>
+			<div class="col-md-3"><img alt="Affordable Leather Wallets" id="product1" src="images/seven.jpg"></div>
+			<div class="col-md-3"><img alt="Gifts for Men, Nairrobi,Kenya" id="product1" src="images/eight.jpg"></div>
+		</div>
+		<h2>Decoration Types</h2>
+		<div class="" id="decoration">
+			<div class="row">
+				<div class="col-md-3">
+				<h6>Beads</h6><img alt="bead decoration" id="deco" src="images/Beads.jpg"></div>
+				<div class="col-md-3">
+				<h6>Brass</h6><img alt="Brass Decoration" id="deco" src="images/Brass.jpg"></div>
+				<div class="col-md-3">
+				<h6>Brass</h6><img alt="Brass Decoration" id="deco" src="images/Brass1.jpg"></div>
+				<div class="col-md-3">
+				<h6>Engraving</h6><img alt="Engraving" id="deco" src="images/Engraving.jpg"></div>
+			</div>
+		</div><!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript">
+		</script> <!-- Bootstrap tooltips -->
 
-  <!-- Navbar brand -->
-  <a class="navbar-brand" href="#home"><img src="images/Logo.png" height="70" class="d-inline-block align-top" alt="logo"></a>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js" type="text/javascript">
+		</script> <!-- Bootstrap core JavaScript -->
 
-  <!-- Collapse button -->
-  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-        class="fas fa-bars fa-1x"></i></span></button>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript">
+		</script> <!-- MDB core JavaScript -->
 
-  <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Products
-        </a>
-        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#bCardHolders">Business Card Holders</a>
-          <a class="dropdown-item" href="#wallets">Wallets</a>
-          <a class="dropdown-item" href="#">Coming Soon</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contacts">Contacts</a>
-      </li>
-    </ul>
-    <!-- Links -->
-
-  </div>
-  <!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
-  <body>
-    <div class="container-fluid">
-
-
-    <div class="row">
-      <div class="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ttVZtSAofBk" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-3">
-      <button id="userSignUp"type="button" name="button">
-      <form id="signUpForm" action="index.html" method="post">
-        <label for="name">Name</label><br>
-        <input id="newName" type="text" name="fName" value=""required><br>
-        <label for="email">Email</label><br>
-        <input id="newEmail"type="text" name="email" value=""required><br>
-        <label for="password">Password</label><br>
-        <input id="newPass"type="text" name="password" value=""required><br>
-
-        <input id="userInfo"type="submit" name="submit" value="Submit"><br>
-      </form>
-      <label id="signup" for="">SIGN UP</label>
-      </button>
-      </div>
-      <div class="col-md-3">
-      <button id="userLogIn"type="button" name="button">
-      <form id="loginForm" action="index.html" method="post">
-        <label for="name">Name</label><br>
-        <input id="userName" type="text" name="fName" value=""required><br>
-        <label for="email">Email</label><br>
-        <input id="userEmail"type="text" name="email" value=""required><br>
-        <label for="password">Password</label><br>
-        <input id="userPass"type="text" name="password" value=""required><br>
-        <input id="userData"type="submit" name="submit" value="Submit"><br>
-      </form>
-      <label id="login" for="">LOG IN</label>
-      </button>
-      </div>
-    </div>
-    </div>
-
-      <div class="container-fluid">
-      <h1 id ="products">PRODUCTS</h1>
-      <h2 id="bCardHolders">Business Card Holders</h2>
-      <div class="row">
-
-        <div class="col-md-3">
-          <div class="card promoting-card">
-            <div class="card-body d-flex flex-row">
-
-              <div class="">
-                <h4 class="card-title font-weight-bold mb-2">Black with Silver</h4>
-              </div>
-            </div>
-            <div class="view overlay">
-              <img id="product1" class="card-img-top-rounded-0" src="images/one.jpg" alt="">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="collapse-content">
-                <p class="card-text collapse" id="collapseContent">Keeps your cards clean.</p>
-                <p class="card-text collapse" id="collapseContent">Slim,sturdy,comfortable.</p>
-                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
-                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
-                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card promoting-card">
-            <div class="card-body d-flex flex-row">
-
-              <div class="">
-                <h4 class="card-title font-weight-bold mb-2">Brown with Gold</h4>
-              </div>
-            </div>
-            <div class="view overlay">
-              <img id="product1" class="card-img-top-rounded-0" src="images/two.jpg" alt="">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="collapse-content">
-                <p class="card-text collapse" id="collapseContent">Magnetic lid to keep your cards intact.</p>
-                <p class="card-text collapse" id="collapseContent">Keeps your cards' edges neat.</p>
-                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
-                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
-                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card promoting-card">
-            <div class="card-body d-flex flex-row">
-
-              <div class="">
-                <h4 class="card-title font-weight-bold mb-2">Wooden Black</h4>
-              </div>
-            </div>
-            <div class="view overlay">
-              <img id="product1" class="card-img-top-rounded-0" src="images/three.jpg" alt="">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="collapse-content">
-                <p class="card-text collapse" id="collapseContent">Wooden feel,sturdy.</p>
-                <p class="card-text collapse" id="collapseContent">Gentle to your pockets.</p>
-                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
-                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
-                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card promoting-card">
-            <div class="card-body d-flex flex-row">
-
-              <div class="">
-                <h4 class="card-title font-weight-bold mb-2">Yellow Magenta</h4>
-              </div>
-            </div>
-            <div class="view overlay">
-              <img id="product1" class="card-img-top-rounded-0" src="images/four.jpg" alt="">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="collapse-content">
-                <p class="card-text collapse" id="collapseContent">Leave a good impression.</p>
-                <p class="card-text collapse" id="collapseContent">Keeps you organized.</p>
-                <a id="buttons" class="btn btn-flat purple-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">READ MORE</a>
-                <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
-                <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 id="wallets">Wallets</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <img id="product1" src="images/five.jpg" alt="">
-        </div>
-        <div class="col-md-3">
-          <h2></h2>
-          <img id="product1" src="images/six.jpg" alt="">
-        </div>
-        <div class="col-md-3">
-          <img id="product1" src="images/seven.jpg" alt="">
-        </div>
-        <div class="col-md-3">
-          <img id="product1" src="images/eight.jpg" alt="">
-        </div>
-      </div>
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
-    <script src="js/scripts.js"  type="text/javascript"></script>
-    </div>
-  </body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js" type="text/javascript">
+		</script>
+		<script src="js/scripts.js" type="text/javascript">
+		</script>
+	</div>
+</body>
 </html>

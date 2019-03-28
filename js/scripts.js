@@ -1,34 +1,40 @@
-// //Business Logic
-// function Users(name,email,password){
-//   this.name = name;
-//   this.email = email;
-//   this.password = password;
-// }
+//The point here was to try and use an already existing array of user info, doesn't work
+
+//Business Logic
+var users = [
+	{
+		name:"Raych",
+		email:"raych@gmail.com",
+		password:"hey"
+	},
+	{
+		name:"Abby",
+		email:"abby@gmail.com",
+		password:"you"
+	},
+	{
+		name:"Peter",
+		email:"Peter@gmail.com",
+		password:"him"
+	}
+];
+
 //UI Logic
-$(document).ready(function() {
-	$("#userSignUp").click(function() {
-		$("#signUpForm").show();
-		$("#signup").hide();
-	});
-	$("#userInfo").click(function(event) {
-		// var newCust = new User(name, email, password);
-		var custName = $("#newName").val();
-		var custEmail = $("#newEmail").val();
-		var custPass = $("#newPass").val();
-		var custData = [];
-		custData.push(custName, custEmail, custPass);
-		$("#userSignUp").text("Thank you for signing up!");
-	});
-	$("#userLogIn").click(function() {
+$(document).ready(function(){
+	$("#userLogIn").click(function(){
 		$("#loginForm").show();
 		$("#login").hide();
 	});
-	$("#userData").click(function(event){
-		var currentName = $("#userName").val();
-		var currentEmail = $("#userEmail").val();
-		var currentPass = $("#userPass").val();
-		var loginArray = [];
-		loginArray.push(currentName,currentEmail,currentPass);
-		//Could not get to compare the elements using arrays and array elements, looping, forEach didn't work, so decided to try objeects.	
-	});
+
+	function getInfo(){
+		var custName = $("#newName").val();
+		var custEmail = $("#newEmail").val();
+		var custPassword = $("#newPass").val();
+		for (i=0;i<users.length;i++){
+			if(custName === users[i].name && custEmail === users[i].email && custPassword === users[i].password){
+				("#userLogIn").text("name " + " you are logged in!");
+			}
+		}
+	}
+
 });
