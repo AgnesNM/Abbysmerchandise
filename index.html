@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-	<meta charset="utf-8"><!-- Font Awesome -->
+	<meta charset="utf-8" name="description" content="Professional,affordable and classy business card holders and wallets to showcase your professionalism."><!-- Font Awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet"><!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"><!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<title>Abbysmerchandise</title>
+	<title>Abbysmerchandise - more than superficial</title>
 </head><!--Navbar-->
 <body>
 	<nav class="navbar sticky-top navbar warning-color">
@@ -60,7 +60,7 @@
 					<input id="userEmail" name="email" required="" type="text" value=""><br>
 					<label for="password">Password</label><br>
 					<input id="userPass" name="password" required="" type="text" value=""><br>
-					<input id="userData" name="submit" onclick="getInfo()" type="submit" value="Submit"><br>
+					<input id="userData" name="submit" type="submit" value="Submit"><br>
 				</form><label for="" id="login">LOG IN</label></button>
 			</div>
 		</div>
@@ -75,7 +75,7 @@
 				<div class="card mb-3">
 					<!--Card image-->
 					<div class="view overlay">
-						<img id="product1" alt="professional business card holders" class="card-img-top-rounded-0" src="images/one.jpg"> <a href="#!">
+						<img id="product1" alt="Black professional business card holders" class="card-img-top-rounded-0" src="images/one.jpg"> <a href="#!">
             <div class="mask rgba-white-slight"></div></a>
 					</div><!--Card content-->
 					<div class="card-body">
@@ -83,20 +83,26 @@
 						<h4 class="card-title font-weight-bold mb-2">Black with Silver</h4>
 						<p class="card-text" id="collapseContent">Keeps your cards clean.</p>
 						<p class="card-text" id="collapseContent">Slim,sturdy,comfortable.</p>
-						<h6>Choose decoration type:</h6>
-	          <select class="" name="">
-	            <option selected="selected" value="">Select</option>
-	            <option value="Beads">Beads<img src="images/Beads.jpg" alt="Bead Decoration"</option>
-	            <option value="Brass">Brass</option>
-	            <option value="Engraving">Engraving</option>
-	            <option value="Flatbed">Flatbed UV Coating</option>
-	          </select>
+						<button id="price" type="button" name="button" value="700">KES.700</button><br>
+						<p id="display"></p>
+						<div class="options">
+							<h6>Choose decoration type:</h6>
+							<select id="decoChoice" name="">
+								<option selected="selected" value="">Select</option>
+								<option id="beads" value="300">Beads<img src="images/Beads.jpg" alt="Bead Decoration"</option>
+								<option id="brass" value="300">Brass</option>
+								<option id="engrave" value="400">Engraving</option>
+								<option id="flatbed"value="400">Flatbed UV Coating</option>
+							</select>
+							<button id="preference" type="button" name="button" value="submit">GET TOTAL</button>
+						</div>
 					</div>
 				</div><!-- Card -->
 				<div class="card mb-3">
 					<!--Card image-->
 					<div class="view overlay">
-						<img id="product1" class="card-img-top-rounded-0" src="images/two.jpg" alt="Affordable business card holders"> <a href="#!">
+						<img id="product1" class="card-img-top-rounded-0" src="images/two.jpg" alt="Affordable brown
+						 business card holders"> <a href="#!">
 						<div class="mask rgba-white-slight"></div></a>
 					</div><!--Card content-->
 					<div class="card-body">
@@ -117,7 +123,7 @@
 				<div class="card mb-3">
 					<!--Card image-->
 					<div class="view overlay">
-						<img id="product1" class="card-img-top-rounded-0" src="images/three.jpg" alt="Synthetic leeather business card holder"> <a href="#!">
+						<img id="product1" class="card-img-top-rounded-0" src="images/three.jpg" alt="Synthetic leather business card holder"> <a href="#!">
 						<div class="mask rgba-white-slight"></div></a>
 					</div><!--Card content-->
 					<div class="card-body">
@@ -150,7 +156,7 @@
 						<h6>Choose decoration type:</h6>
 						<select class="" name="">
 	            <option value="" selected>Select</option>
-	            <option value="Beads">Beads <img src="images/Beads.jpg" alt="Bead Decoration"> </option>
+	            <option value="Beads">Beads</option>
 	            <option value="Brass">Brass</option>
 	            <option value="Engraving">Engraving</option>
 	            <option value="Flatbed">Flatbed UV Coating</option>

@@ -6,10 +6,10 @@ height:100%;
 width:100%;
 padding:2%;
 }
-.collapse-content .fa.fa-heart:hover {
+.collapse-content{
   color: #f44336 !important;
 }
-.collapse-content .fa.fa-share-alt:hover {
+.collapse-content{
   color: #0d47a1 !important;
 }
 .col-md-3{
@@ -32,4 +32,16 @@ button{
 height:100%;
 width:100%;
 padding:2%;
+}
+#price{
+  align-items: center;
+  margin-bottom: 5%;
+  background-color: purple;
+  color:white;
+}
+.options{
+  float:left;
+}
+#preference{
+  display: none;
 }
