@@ -5,7 +5,6 @@ $(document).ready(function() {
 		$("#signup").hide();
 	});
 	$("#userInfo").click(function(event) {
-		// var newCust = new User(name, email, password);
 		var custName = $("#newName").val();
 		var custEmail = $("#newEmail").val();
 		var custPass = $("#newPass").val();
