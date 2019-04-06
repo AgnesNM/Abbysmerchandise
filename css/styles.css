@@ -39,9 +39,26 @@ padding:2%;
   background-color: purple;
   color:white;
 }
-.options{
+#itemPrice{
+  align-items: center;
+  margin-bottom: 5%;
+  background-color: purple;
+  color:white;
+}
+#decoPrice{
+  align-items: center;
+  margin-bottom: 5%;
+  background-color: purple;
+  color:white;
+}
+#decoOptions{
+  display: none;
   float:left;
 }
 #preference{
   display: none;
+  padding: 2%;
+  background-color: purple;
+  font-style: oblique;
+  color:white;
 }
