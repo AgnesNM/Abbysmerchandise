@@ -10,11 +10,10 @@ $(document).ready(function() {
 	});
 	$("#userInfo").click(function(event) {
 		var custName = $("#newName").val();
-		var custEmail = $("#newEmail").val();		
+		var custEmail = $("#newEmail").val();
 		var custPass = $("#newPass").val();
-		localStorage.setItem("name", "Raych") +
-		localStorage.setItem("email", "raych@gmail.com") +
-		localStorage.setItem("password", "hey");
+		var custData = [];
+		custData.push(custName, custEmail, custPass);
 		$("#userSignUp").text("Thank you for signing up!");
 	});
 	$("#userLogIn").click(function() {
@@ -27,10 +26,9 @@ $(document).ready(function() {
 		var currentName = $("#userName").val();
 		var currentEmail = $("#userEmail").val();
 		var currentPass = $("#userPass").val();
-		localStorage.getItem("name") +
-		localStorage.getItem("email") +
-		localStorage.getItem("password");
-		$("#userLogIn").text("You are logged in!");
+			if ((currentName === custData[0]) && (currentEmail === custData[1]) && (currentPass === custData[2])) {
+				alert('You are logged in!');
+			}
 		});
 
 	$("#price").click(function(){
