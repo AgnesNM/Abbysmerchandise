@@ -10,7 +10,7 @@ $(document).ready(function() {
 	});
 	$("#userInfo").click(function(event) {
 		var custName = $("#newName").val();
-		var custEmail = $("#newEmail").val();		
+		var custEmail = $("#newEmail").val();
 		var custPass = $("#newPass").val();
 		localStorage.setItem("name", "Raych") +
 		localStorage.setItem("email", "raych@gmail.com") +
@@ -60,19 +60,5 @@ $(document).ready(function() {
 		var result = parseInt(decoCost) + parseInt(cost);
 		$("#displayArea").text("Your total cost is " + result);
 	});
-
-
-		// $("#decoPreference").click(function(){
-		// 	var cost = $("#price").val();
-		// 	var decoCost = $("#decoPrice").val();
-		// 		alert(cost);
-		// 		alert(decoCost);
-		// });
-
-
-		// var decoCost = $("#decoChoice").val();
-		// var totalCost = parseInt(cost) + parseInt(decoCost);
-		// alert("Your total cost is KES: " + totalCost);
-		// alert("Thank you for purchasing from us!");
-	 // });
+	
 });

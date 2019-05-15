@@ -1,6 +1,6 @@
 # Abbysmerchandise
 This is a passion project. It's meant to help me practice how I would build a small e-commerce store using Javascript, HTML, CSS (Bootstrap and jQuery).
-Here is a screenshot of how the project look like:[Abbysmerchandise](images/Abbys2.jpg)
+Here is a screenshot of how the project looks like:[Abbysmerchandise](images/Abbys2.jpg)
 
 #### 13th March 2019
 #### By Agnes Mwaniki (agnesndutamwaniki@gmail.com)
