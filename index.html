@@ -92,10 +92,45 @@
 						<!--Title-->
 						<h4 class="card-title font-weight-bold mb-2">Black with Silver</h4>
 						<p class="card-text" id="collapseContent">Keeps your cards clean.</p>
-						<p class="card-text" id="collapseContent">Slim,sturdy,comfortable.</p><button id="price" name="button" type="button" value="700">KES.700</button><br>
-						<p id="display"></p><a href="decoration.html"><button id="preference" name="button" type="button" value="submit">Choose Decoration Type</button></a>
+						<p class="card-text" id="collapseContent">Slim,sturdy,comfortable.</p>
+						<button type="button" class="showPrice" data-toggle="modal" data-target="#basicExampleModal" name="button" type="button">
+								KES 700
+							  </button>
+						
+					</div><!-- Card -->
+					<div class="displayModal">
+						<!-- Button trigger modal -->
+						<button type="button" class="price" data-toggle="modal" data-target="#basicExampleModal" name="button" type="button" value="700">
+							KES 700
+						  </button>
+		  
+						  <!-- Modal -->
+						  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								  <div class="modal-content">
+									<div class="modal-header">
+										  <h5 class="modal-title" id="exampleModalLabel">Pricing</h5>
+												  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												  </button>
+									</div>
+						<div class="modal-body">
+								<p class="display"></p>													
+						</div>
+						<div class="modal-footer">
+							  <button type="button" class="displayButton" data-dismiss="modal">Close</button>
+							  <a href="decoration.html"class= "decoChoice">
+									<button type="button" class="displayButton">Choose </button></a>							 					
+						</div>
+			  </div>
+			</div>
+		  </div>	
 					</div>
-				</div><!-- Card -->
+						
+					</div>
+		
+
 				<div class="card mb-3">
 					<!--Card image-->
 					<div class="view overlay">
@@ -106,8 +141,8 @@
 						<!--Title-->
 						<h4 class="card-title font-weight-bold mb-2">Brown with Gold</h4>
 						<p class="card-text" id="collapseContent">Magnetic lid to keep your cards intact.</p>
-						<p class="card-text" id="collapseContent">Keeps your cards' edges neat.</p><button id="price" name="button" type="button" value="700">KES.700</button><br>
-						<p id="display"></p><a href="decoration.html"><button id="preference" name="button" type="button" value="submit">Choose Decoration Type</button></a>
+						<p class="card-text" id="collapseContent">Keeps your cards' edges neat.</p>
+						<a href="decoration.html"><button class="preference" name="button" type="button" value="submit">Choose Decoration Type</button></a>
 					</div>
 				</div><!-- Card -->
 				<div class="card mb-3">
@@ -205,7 +240,7 @@
 		 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js" type="text/javascript">
 		</script> 
-		<script src="js/scripts.js" type="text/javascript">
+		<script src="js/scripts10.js" type="text/javascript">
 		</script>
 	</div>
 </body>
